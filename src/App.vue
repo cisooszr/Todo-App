@@ -42,6 +42,7 @@ export default {
           { id: 4, text: "Bootcamp #2.3" },
           { id: 5, text: "Bootcamp #2.4" },
           { id: 6, text: "Bootcamp #2.5" },
+          { id: 7, text: "Bootcamp #2.6" },
         ],
       },
     };
@@ -62,7 +63,9 @@ export default {
       // if (matchedIndex > -1) {
       //   this.todoList.splice(this.todoList[matchedIndex], 1);
       // }
-      this.provideData.todoList = this.provideData.todoList.filter((t) => t !== todoItem);
+      this.provideData.todoList = this.provideData.todoList.filter(
+        (t) => t !== todoItem
+      );
     },
     addNewTodo(todo) {
       this.provideData.todoList.push({
